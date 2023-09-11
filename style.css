@@ -238,7 +238,7 @@ img {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  margin-bottom: 39px;
+  /*margin-bottom: 39px; это здесь лишнее!*/
 }
 
 .cards__2 h2 {
