@@ -42,7 +42,7 @@ img {
 .navigation {
   display: flex;
   gap: 500px;
-  padding: 40px; /* внутренний отступ*/
+  padding: 40px 0; /* внутренний отступ, необходимо указывать и второй параметр, если нет необходимости иметь отступы сбоку (типа 40 40 40 40)*/
 }
 
 .links {
@@ -74,6 +74,7 @@ img {
 .content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 197px;
 }
 
 .content__left-side {
@@ -133,4 +134,126 @@ img {
 .logos {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.cards__list1 {
+  display: flex;
+  gap: 61px;
+  margin-bottom: 100px;
+}
+
+.cards {
+  padding: 40px 25px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start; /* выровняла по левому краю и загнала картинки в их исходный размер (из-за флекса, растянулись на всю ширину)*/
+}
+
+.cards h2 {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+}
+
+.cards p {
+  color: #666;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.cards h3 {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card__2 {
+  background: #fff; /* в целом здесь не нужен */
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  text-align: center;
+  padding: 92px 54px;
+  background: #fafafa;
+}
+
+.description h2 {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 52.73px;
+}
+
+.description p {
+  color: #666;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  /*max-width: 682px;
+  align-items: center;*/
+}
+
+.cards__list2 {
+  background: #fafafa;
+  display: flex;
+  gap: 30px;
+}
+
+.cards__2 {
+  padding: 0px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+  background: #fff;
+}
+
+.cards__2 h2 {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+}
+
+.cards__2 p {
+  color: #aaa;
+  text-align: center;
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.shadow {
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn__2 {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy-Bold;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%;
+  background: rgba(242, 88, 34, 1);
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
 }
